@@ -2,7 +2,7 @@ Summary:	A CD image format converter from .bin/.cue to .iso/.cdr
 Summary(pl):	Konwerter obrazów p³yt CD z .bin/.cue do .iso/.cdr
 Name:		bchunk
 Version:	1.1.1
-Release:	1
+Release:	2
 License:	GPL
 Vendor:		Heikki Hannikainen <hessu@pspt.fi>
 Group:		Applications/Archiving
