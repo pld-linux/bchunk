@@ -1,6 +1,6 @@
 Summary:	A CD image format converter from (.bin/.cue to .iso/.cdr)
 Name:		bchunk
-Version:	1.0.0
+Version:	1.1.1
 Release:	1
 License:	GPL
 Vendor:		Heikki Hannikainen <hessu@pspt.fi>
@@ -36,7 +36,7 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 
 install bchunk $RPM_BUILD_ROOT%{_bindir}
 
-gzip -9nf README
+gzip -9nf ChangeLog README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
