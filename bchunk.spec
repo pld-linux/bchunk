@@ -1,13 +1,14 @@
-Summary:	A CD image format converter from (.bin/.cue to .iso/.cdr).
+Summary:	A CD image format converter from (.bin/.cue to .iso/.cdr)
 Name:		bchunk
 Version:	1.0.0
 Release:	1
-Group:		Applications/Archiving
-######		Unknown group!
 License:	GPL
 Vendor:		Heikki Hannikainen <hessu@pspt.fi>
-Url:		http://hes.iki.fi/bchunk
+Group:		Applications/Archiving
+Group(de):	Applikationen/Archivierung
+Group(pl):	Aplikacje/Archiwizacja
 Source0:	http://hes.iki.fi/bchunk/%{name}-%{version}.tar.gz
+URL:		http://hes.iki.fi/bchunk/
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -18,27 +19,29 @@ program.. BinChunker converts a CD image in a .bin/.cue format
 not supported on most other CD-writing programs.
 
 %description -l pl
-Konwerter obrazów CD z formatu .bin/.cue (czasami .raw/.cue)
-do formatu .iso i ¶cie¿ek .cdr. Format .bin/.cue jest czasami
-u¿ywany przez niektóre nie-UNIXowe programy do wypalania CD
-ale nie jest wspierany przez wiêkszo¶æ uniksowych programów
-do wypalania.
+Konwerter obrazów CD z formatu .bin/.cue (czasami .raw/.cue) do
+formatu .iso i ¶cie¿ek .cdr. Format .bin/.cue jest czasami u¿ywany
+przez niektóre nie-UNIXowe programy do wypalania CD ale nie jest
+wspierany przez wiêkszo¶æ uniksowych programów do wypalania.
 
 %prep
 %setup -q
 
 %build
-gcc $RPM_OPT_FLAGS -Wall %{name}.c -o %{name}
+%{__cc} %{!?debug:$RPM_OPT_FLAGS}%{?debug:-O -g} %{name}.c -o %{name}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
+
 install bchunk $RPM_BUILD_ROOT%{_bindir}
+
+gzip -9nf README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
+%doc *.gz
 %attr(755,root,root) %{_bindir}/bchunk
