@@ -28,7 +28,7 @@ wspierany przez wiêkszo¶æ uniksowych programów do wypalania.
 %setup -q
 
 %build
-%{__cc} %{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS} %{name}.c -o %{name}
+%{__cc} %{rpmcflags} %{name}.c -o %{name}
 
 %install
 rm -rf $RPM_BUILD_ROOT
