@@ -7,6 +7,7 @@ License:	GPL
 Vendor:		Heikki Hannikainen <hessu@pspt.fi>
 Group:		Applications/Archiving
 Source0:	http://hes.iki.fi/bchunk/%{name}-%{version}.tar.gz
+# Source0-md5: 9a86fde990df3a58fad51876139f121c
 URL:		http://hes.iki.fi/bchunk/
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
