@@ -1,4 +1,5 @@
-Summary:	A CD image format converter from (.bin/.cue to .iso/.cdr)
+Summary:	A CD image format converter from .bin/.cue to .iso/.cdr
+Summary(pl):	Konwerter obrazów p³yt CD z .bin/.cue do .iso/.cdr
 Name:		bchunk
 Version:	1.1.1
 Release:	1
@@ -21,7 +22,7 @@ not supported on most other CD-writing programs.
 %description -l pl
 Konwerter obrazów CD z formatu .bin/.cue (czasami .raw/.cue) do
 formatu .iso i ¶cie¿ek .cdr. Format .bin/.cue jest czasami u¿ywany
-przez niektóre nie-UNIXowe programy do wypalania CD ale nie jest
+przez niektóre nie-UNIXowe programy do wypalania CD, a nie jest
 wspierany przez wiêkszo¶æ uniksowych programów do wypalania.
 
 %prep
