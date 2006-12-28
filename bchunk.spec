@@ -20,8 +20,8 @@ not supported on most other CD-writing programs.
 %description -l pl
 Konwerter obrazów CD z formatu .bin/.cue (czasami .raw/.cue) do
 formatu .iso i ¶cie¿ek .cdr. Format .bin/.cue jest czasami u¿ywany
-przez niektóre nie-UNIXowe programy do wypalania CD, a nie jest
-wspierany przez wiêkszo¶æ uniksowych programów do wypalania.
+przez niektóre nieuniksowe programy do wypalania CD, a nie jest
+obs³ugiwany przez wiêkszo¶æ uniksowych programów do wypalania.
 
 %prep
 %setup -q
