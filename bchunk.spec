@@ -1,5 +1,5 @@
 Summary:	A CD image format converter from .bin/.cue to .iso/.cdr
-Summary(pl.UTF-8):   Konwerter obrazów płyt CD z .bin/.cue do .iso/.cdr
+Summary(pl.UTF-8):	Konwerter obrazów płyt CD z .bin/.cue do .iso/.cdr
 Name:		bchunk
 Version:	1.2.0
 Release:	0.1
