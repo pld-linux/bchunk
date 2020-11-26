@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Konwerter obrazów płyt CD z .bin/.cue do .iso/.cdr
 Name:		bchunk
 Version:	1.2.2
 Release:	1
-License:	GPL
+License:	GPL v2+
 Group:		Applications/Archiving
 Source0:	http://he.fi/bchunk/%{name}-%{version}.tar.gz
 # Source0-md5:	0eeb764647824062085872ddb0b28c5a
